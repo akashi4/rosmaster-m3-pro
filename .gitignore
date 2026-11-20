@@ -1,0 +1,18 @@
+# ROS2 / colcon
+build/
+install/
+log/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# macOS / IDE
+.DS_Store
+.vscode/
+.idea/
+
+# External cloned repos (if cloned locally)
+external/

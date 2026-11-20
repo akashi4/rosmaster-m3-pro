@@ -1,0 +1,42 @@
+# Profil matériel confirmé — Yahboom ROSMASTER M3 Pro
+robot:
+  model: "Yahboom ROSMASTER M3 Pro"
+  ros_distro: "humble"
+  os: "Ubuntu (natif)"
+
+compute:
+  sbc: "NVIDIA Jetson Orin NX Super"
+  ram_gb: 16
+  mcu: "STM32 (micro-ROS)"
+  imu: "9-axis IMU (intégré STM32)"
+
+chassis:
+  material: "Aluminum alloy"
+  dimensions_cm: [19.8, 17.8, 16.8]
+  wheels: "80mm Mecanum (4x)"
+  suspension: "Rear-wheel independent pendulum-style"
+  battery: "9600mAh (12.6V)"
+  charger: "12.6V 2A DC"
+
+sensors:
+  lidar:
+    model: "YDLIDAR T-Mini Plus (ToF)"
+    count: 2
+    placement: ["front-left", "rear-right"]
+    coverage_deg: 360
+    range_m: [0.05, 12.0]
+  depth_camera:
+    model: "Orbbec DABAI DCW2"
+    type: "Binocular structured-light"
+    max_range_m: 5.0
+
+manipulator:
+  arm_dof: 6
+  actuators: "Intelligent serial bus servos (position/status feedback)"
+  max_payload_g: 410
+  repeatability_mm: 0.5
+  moveit_supported: true
+
+peripherals:
+  touchscreen: "7-inch IPS HD"
+  audio: "Built-in speakers + voice recognition module"
